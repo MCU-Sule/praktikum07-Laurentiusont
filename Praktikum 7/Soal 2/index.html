@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt ("berapa harga belanjaan anda?");
+        let b = prompt ("berapa uang yang dibayar?");
+        let c = b-a ;
+        document.write ("Harga belanjaan anda adalah Rp." + a +"<br>");
+        document.write ("uang yang dibayarkan adalah Rp." + b + "<br> <br> <br>");
+        document.write ("kembalian anda adalah Rp." + c + "dengan rincian sebagai berikut <br>");
+
+        if (c>=100000) {
+            let s= Math.floor (c/100000);
+            document.write ("uang 100000 sebanyak " + s + " lembar <br>")
+            c=c-(s*100000)
+        }
+        if (c>=50000) {
+            let s1= Math.floor (c/50000);
+            document.write ("uang 50000 sebanyak " + s1 + " lembar <br>")
+            c=c-(s1*50000)
+        }
+
+        if (c>=20000) {
+            let s3= Math.floor (c/20000);
+            document.write ("uang 20000 sebanyak " + s3 + " lembar <br>")
+            c=c-(s3*20000)
+        }
+        if (c>=10000) {
+            let s4= Math.floor (c/10000);
+            document.write ("uang 10000 sebanyak " + s4 + " lembar <br>")
+            c=c-(s4*10000)
+        }
+
+        if (c>=5000) {
+            let s5= Math.floor (c/5000);
+            document.write ("uang 5000 sebanyak " + s5 + " lembar <br>")
+            c=c-(s5*5000)
+        }
+
+        if (c>=2000) {
+            let s6= Math.floor (c/2000);
+            document.write ("uang 2000 sebanyak " + s6 + " lembar <br>")
+            c=c-(s6*2000)
+        }
+
+        if (c>=1000) {
+            let s7= Math.floor (c/1000);
+            document.write ("uang 1000 sebanyak " + s7 + " lembar <br>")
+            c=c-(s7*1000)
+        }
+
+        if (c>=500) {
+            let s8= Math.floor (c/500);
+            document.write ("uang 500 sebanyak " + s8 + " lembar <br>")
+            c=c-(s8*500)
+        }
+
+            document.write ("sisa kembalian Rp" + c)
+        
+
+    </script>
+</body>
+</html>
